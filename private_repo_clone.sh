@@ -3,9 +3,6 @@
 echo "Generating RSA Key..."
 ssh-keygen -t rsa -b 4096
 
-echo "Adding Bitbucket to known hosts..."
-ssh-keyscan -t rsa globaldevtools.bbva.com >> ~/.ssh/known_hosts
-
 echo "Adding GitHub to known hosts..."
 ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
